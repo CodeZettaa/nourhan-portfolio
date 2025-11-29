@@ -11,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "format": "prettier --write \"src/**/*.{ts,html,css}\"",
-    "deploy:gh-pages": "npm run build:gh-pages && npx angular-cli-ghpages --dir=dist/nourhan-portfolio/browser"
+    "deploy:gh-pages": "npm run build:gh-pages && npx angular-cli-ghpages --dir=dist/nourhan-portfolio/browser --cname=codezetta.github.io"
   },
   "private": true,
   "dependencies": {

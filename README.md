@@ -77,9 +77,12 @@ This will build the project with the correct base href for GitHub Pages.
 
 ### Deploy to GitHub Pages
 
+#### Option 1: Manual Deployment
+
 After building for GitHub Pages, you can deploy using:
 
 ```bash
+npm install --save-dev angular-cli-ghpages
 npm run deploy:gh-pages
 ```
 
@@ -87,11 +90,16 @@ This command will:
 1. Build the project with the correct base href
 2. Deploy to the `gh-pages` branch using `angular-cli-ghpages`
 
-**Note:** Make sure you have `angular-cli-ghpages` installed globally or as a dev dependency. If not, install it:
+#### Option 2: Automatic Deployment (GitHub Actions)
 
-```bash
-npm install -g angular-cli-ghpages
-```
+The repository includes a GitHub Actions workflow that automatically deploys to GitHub Pages when you push to the `main` branch.
+
+1. Push your code to GitHub
+2. Go to repository Settings → Pages
+3. Select `gh-pages` branch as the source
+4. The workflow will automatically deploy on every push to `main`
+
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
 
 ## Project Structure
 
