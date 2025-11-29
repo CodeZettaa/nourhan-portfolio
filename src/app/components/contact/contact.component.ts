@@ -16,11 +16,11 @@ interface SocialLink {
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-  email = 'nourhan@example.com';
+  email = 'nourhansaed6@gmail.com';
   message = "Let's talk about frontend, architecture, or teaching.";
 
   socialLinks: SocialLink[] = [
-    { label: 'GitHub', url: 'https://github.com/USERNAME', icon: '💻' },
+    { label: 'GitHub', url: 'https://github.com/CodeZettaa', icon: '💻' },
     { label: 'LinkedIn', url: 'https://linkedin.com/in/nourhan-saeed', icon: '💼' },
     { label: 'YouTube / CodeZetta', url: 'https://youtube.com/@codezetta', icon: '📺' },
     { label: 'TikTok', url: 'https://tiktok.com/@codezetta8', icon: '🎵' },

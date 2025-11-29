@@ -13,10 +13,10 @@ export class ButtonComponent {
   @Input() href?: string;
   @Input() type: 'button' | 'submit' | 'reset' = 'button';
   @Input() disabled = false;
-  @Output() click = new EventEmitter<void>();
+  @Input() label?: string;
+  @Output() buttonClick = new EventEmitter<void>();
 
   onClick() {
-    this.click.emit();
+    this.buttonClick.emit();
   }
 }
-

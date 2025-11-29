@@ -24,9 +24,9 @@
           </div>
           <div class="project-actions">
             @if (project.websiteUrl) {
-              <app-button variant="primary" [href]="project.websiteUrl">Live Demo</app-button>
+              <app-button variant="primary" [href]="project.websiteUrl" label="Live Demo"></app-button>
             }
-            <app-button variant="outline" [href]="project.githubUrl">View on GitHub</app-button>
+            <app-button variant="outline" [href]="project.githubUrl" label="View Source Code"></app-button>
           </div>
         </div>
       }

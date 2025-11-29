@@ -50,7 +50,7 @@ export class ProjectsComponent {
         'Collection of examples for performance best practices in Angular: OnPush, trackBy, lazy loading, smart/presentational components.',
       highlights: ['Performance optimization', 'Best practices'],
       tech: ['Angular', 'Performance', 'Best Practices'],
-      githubUrl: 'https://github.com/USERNAME/angular-performance-patterns',
+      githubUrl: 'https://github.com/CodeZettaa/angular-performance-patterns',
     },
     {
       title: 'Fullstack Job Tracker',
@@ -59,7 +59,7 @@ export class ProjectsComponent {
         'Small fullstack project using NestJS API and Angular frontend to track job applications.',
       highlights: ['Fullstack integration', 'REST', 'Basic CRUD'],
       tech: ['Angular', 'NestJS', 'TypeScript', 'REST API'],
-      githubUrl: 'https://github.com/USERNAME/fullstack-job-tracker',
+      githubUrl: 'https://github.com/CodeZettaa/fullstack-job-tracker',
     },
     {
       title: 'Frontend Architecture Workshop',
@@ -68,7 +68,7 @@ export class ProjectsComponent {
         'Slides and demos used in workshops about frontend architecture, JavaScript internals, and module bundlers.',
       highlights: ['Teaching', 'Architecture storytelling'],
       tech: ['Workshop', 'Architecture', 'JavaScript'],
-      githubUrl: 'https://github.com/USERNAME/frontend-architecture-workshop',
+      githubUrl: 'https://github.com/CodeZettaa/frontend-architecture-workshop',
     },
   ];
 }

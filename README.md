@@ -5,6 +5,7 @@ This is the personal portfolio website of **Nourhan Saeed** (also known as Nourh
 ## About
 
 This portfolio showcases my work as:
+
 - **Senior / Staff Frontend Engineer** at Almatar (travel-tech company)
 - **Tech Instructor** at ITI, Route Academy, and Elevate Egypt
 - **Founder & Content Creator** at CodeZetta
@@ -38,17 +39,20 @@ This portfolio is built with:
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone <repository-url>
    cd nourhan-portfolio
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```
 
 3. Start the development server:
+
    ```bash
    npm start
    ```
@@ -87,6 +91,7 @@ npm run deploy:gh-pages
 ```
 
 This command will:
+
 1. Build the project with the correct base href
 2. Deploy to the `gh-pages` branch using `angular-cli-ghpages`
 
@@ -171,8 +176,8 @@ This project is private and personal.
 
 ## Contact
 
-- **Email**: nourhan@example.com
-- **GitHub**: [USERNAME](https://github.com/USERNAME)
+- **Email**: nourhansaed6@gmail.com
+- **GitHub**: [CodeZettaa](https://github.com/CodeZettaa)
 - **LinkedIn**: [nourhan-saeed](https://linkedin.com/in/nourhan-saeed)
 - **YouTube**: [CodeZetta](https://youtube.com/@codezetta)
 - **TikTok**: [@codezetta8](https://tiktok.com/@codezetta8)
@@ -180,4 +185,3 @@ This project is private and personal.
 ---
 
 Built with ❤️ using Angular 19
-
