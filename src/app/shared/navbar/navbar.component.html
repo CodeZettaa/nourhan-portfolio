@@ -1,0 +1,33 @@
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="navbar-container">
+    <a href="#hero" class="navbar-brand" (click)="scrollToSection('#hero'); $event.preventDefault()">
+      <span class="brand-name">Nourhan Saeed</span>
+    </a>
+
+    <button
+      class="mobile-menu-toggle"
+      (click)="toggleMobileMenu()"
+      [attr.aria-expanded]="isMobileMenuOpen"
+      aria-label="Toggle menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-menu" [class.active]="isMobileMenuOpen">
+      @for (item of navItems; track item.label) {
+        <li class="nav-item">
+          <a
+            [href]="item.href"
+            (click)="scrollToSection(item.href); $event.preventDefault()"
+            class="nav-link"
+          >
+            {{ item.label }}
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</nav>
+

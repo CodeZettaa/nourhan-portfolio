@@ -1,0 +1,97 @@
+.skills {
+  background-color: var(--bg-secondary);
+}
+
+.skills-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skill-category {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.skill-category:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.skill-category:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.skill-category:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.skill-category:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.skill-category:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.skill-category::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    rgba(99, 102, 241, 0.1),
+    transparent 30%
+  );
+  animation: rotate 4s linear infinite;
+  pointer-events: none;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.skill-category:hover::after {
+  opacity: 1;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-primary);
+}
+
+.category-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+}
+

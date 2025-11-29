@@ -1,0 +1,193 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0 4rem;
+  position: relative;
+  background: radial-gradient(ellipse at top, rgba(99, 102, 241, 0.1), transparent);
+  overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero::before {
+  width: 500px;
+  height: 500px;
+  top: -250px;
+  right: -250px;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.15),
+    rgba(139, 92, 246, 0.1),
+    transparent
+  );
+  animation: rotate 20s linear infinite;
+}
+
+.hero::after {
+  width: 400px;
+  height: 400px;
+  bottom: -200px;
+  left: -200px;
+  background: radial-gradient(
+    circle,
+    rgba(139, 92, 246, 0.15),
+    rgba(99, 102, 241, 0.1),
+    transparent
+  );
+  animation: rotateReverse 25s linear infinite;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInDown 1s ease-out, scaleIn 1.2s ease-out;
+}
+
+.hero-title {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-out 0.4s both;
+}
+
+.hero-tagline {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--text-secondary);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.hero-badges app-tag {
+  animation: scaleIn 0.5s ease-out both;
+}
+
+.hero-badges app-tag:nth-child(1) {
+  animation-delay: 1s;
+}
+
+.hero-badges app-tag:nth-child(2) {
+  animation-delay: 1.2s;
+}
+
+.hero-badges app-tag:nth-child(3) {
+  animation-delay: 1.4s;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+.hero-cta app-button {
+  animation: scaleIn 0.5s ease-out both;
+  transition: var(--transition);
+}
+
+.hero-cta app-button:nth-child(1) {
+  animation-delay: 1.2s;
+}
+
+.hero-cta app-button:nth-child(2) {
+  animation-delay: 1.4s;
+}
+
+.hero-cta app-button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 6rem 0 3rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-cta app-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Rotating Blobs */
+.rotating-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.rotating-blob-1 {
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  right: 10%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  animation: rotate 15s linear infinite, float 8s ease-in-out infinite;
+}
+
+.rotating-blob-2 {
+  width: 250px;
+  height: 250px;
+  bottom: 15%;
+  left: 15%;
+  background: linear-gradient(225deg, var(--accent-secondary), var(--accent-primary));
+  animation: rotateReverse 18s linear infinite, float 10s ease-in-out infinite 2s;
+}
+
+.rotating-blob-3 {
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 5%;
+  background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
+  animation: rotate 12s linear infinite, float 7s ease-in-out infinite 1s;
+}
+

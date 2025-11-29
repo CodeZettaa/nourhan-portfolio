@@ -1,0 +1,25 @@
+<section id="contact" class="contact section">
+  <div class="container">
+    <app-section-title title="Contact" id="contact-title" />
+    <div class="contact-content">
+      <p class="contact-message">{{ message }}</p>
+      <div class="contact-email">
+        <a [href]="'mailto:' + email" class="email-link">{{ email }}</a>
+      </div>
+      <div class="contact-social">
+        @for (link of socialLinks; track link.label) {
+          <a
+            [href]="link.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link"
+          >
+            <span class="social-icon">{{ link.icon }}</span>
+            <span>{{ link.label }}</span>
+          </a>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+

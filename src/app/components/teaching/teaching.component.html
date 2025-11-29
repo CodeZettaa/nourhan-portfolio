@@ -1,0 +1,24 @@
+<section id="teaching" class="teaching section">
+  <div class="container">
+    <app-section-title title="Teaching & Speaking" id="teaching-title" />
+    <div class="teaching-grid">
+      @for (item of teachingItems; track item.title) {
+        <div class="teaching-card">
+          <h3 class="teaching-title">{{ item.title }}</h3>
+          <p class="teaching-description">{{ item.description }}</p>
+          @if (item.topics) {
+            <div class="teaching-topics">
+              <h4>Topics Covered:</h4>
+              <ul>
+                @for (topic of item.topics; track topic) {
+                  <li>{{ topic }}</li>
+                }
+              </ul>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+

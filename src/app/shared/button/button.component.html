@@ -1,0 +1,16 @@
+@if (href) {
+  <a
+    [href]="href"
+    [class]="'btn btn-' + variant"
+    [attr.target]="href.startsWith('http') ? '_blank' : null"
+    [attr.rel]="href.startsWith('http') ? 'noopener noreferrer' : null"
+    (click)="onClick(); $event.stopPropagation()"
+  >
+    <ng-content></ng-content>
+  </a>
+} @else {
+  <button [type]="type" [class]="'btn btn-' + variant" [disabled]="disabled" (click)="onClick()">
+    <ng-content></ng-content>
+  </button>
+}
+

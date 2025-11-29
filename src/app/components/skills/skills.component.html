@@ -1,0 +1,18 @@
+<section id="skills" class="skills section">
+  <div class="container">
+    <app-section-title title="Skills" id="skills-title" />
+    <div class="skills-grid">
+      @for (category of skillCategories; track category.name) {
+        <div class="skill-category">
+          <h3 class="category-name">{{ category.name }}</h3>
+          <div class="skill-tags">
+            @for (skill of category.skills; track skill) {
+              <app-tag [label]="skill" variant="default" />
+            }
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+

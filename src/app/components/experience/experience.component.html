@@ -1,0 +1,34 @@
+<section id="experience" class="experience section">
+  <div class="container">
+    <app-section-title title="Experience" id="experience-title" />
+    <div class="experience-timeline">
+      @for (exp of experiences; track exp.role + exp.company) {
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-role">{{ exp.role }}</h3>
+            @if (exp.websiteUrl) {
+              <a [href]="exp.websiteUrl" target="_blank" rel="noopener noreferrer" class="experience-company">
+                {{ exp.company }}
+                <span class="external-link-icon">↗</span>
+              </a>
+            } @else {
+              <p class="experience-company">{{ exp.company }}</p>
+            }
+            <div class="experience-meta">
+              <span class="experience-timeline">{{ exp.timeline }}</span>
+              @if (exp.location) {
+                <span class="experience-location">{{ exp.location }}</span>
+              }
+            </div>
+          </div>
+          <ul class="experience-responsibilities">
+            @for (resp of exp.responsibilities; track resp) {
+              <li>{{ resp }}</li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
