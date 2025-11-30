@@ -50,7 +50,8 @@ export class ProjectsComponent {
         'Collection of examples for performance best practices in Angular: OnPush, trackBy, lazy loading, smart/presentational components.',
       highlights: ['Performance optimization', 'Best practices'],
       tech: ['Angular', 'Performance', 'Best Practices'],
-      githubUrl: 'https://github.com/CodeZettaa/angular-performance-patterns',
+      githubUrl: 'https://github.com/CodeZettaa/angular-preformance-patterns',
+      websiteUrl: 'https://codezettaa.github.io/angular-preformance-patterns/',
     },
     {
       title: 'Fullstack Job Tracker',
