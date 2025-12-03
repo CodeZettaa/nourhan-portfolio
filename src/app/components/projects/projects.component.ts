@@ -70,8 +70,7 @@ export class ProjectsComponent {
         'Slides and demos used in workshops about frontend architecture, JavaScript internals, and module bundlers.',
       highlights: ['Teaching', 'Architecture storytelling'],
       tech: ['Workshop', 'Architecture', 'JavaScript'],
-      githubUrl: 'https://github.com/CodeZettaa/frontend-architecture-workshop',
+      githubUrl: 'https://github.com/CodeZettaa/angular-workSpace ',
     },
   ];
 }
-
