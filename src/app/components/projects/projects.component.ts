@@ -60,7 +60,8 @@ export class ProjectsComponent {
         'Small fullstack project using NestJS API and Angular frontend to track job applications.',
       highlights: ['Fullstack integration', 'REST', 'Basic CRUD'],
       tech: ['Angular', 'NestJS', 'TypeScript', 'REST API'],
-      githubUrl: 'https://github.com/CodeZettaa/fullstack-job-tracker',
+      githubUrl: 'https://github.com/CodeZettaa/Job-Tracker-application-full-stack',
+      websiteUrl: 'https://codezettaa.github.io/Job-Tracker-application-full-stack/auth/login',
     },
     {
       title: 'Frontend Architecture Workshop',
